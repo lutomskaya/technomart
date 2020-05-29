@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="main-header-bar">
-        <a class="main-header-logo">Техномарт
+        <a class="main-header-logo button">
           <img src="./img/svg/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
         </a>
         <form class="search" action="/echo" method="get">
@@ -59,50 +62,46 @@
       <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
       <section class="features">
         <ul class="features-list">
-          <li class="features-item">
+          <li class="features-item features-item--yellow">
             <h2 class="features-title">Материалы</h2>
             <a href="#" class="button features-link">на любой вкус</a>
           </li>
-          <li class="features-item">
+          <li class="features-item features-item--blue">
             <h2 class="features-title">Инструмент</h2>
             <a href="#" class="button features-link">на все случаи</a>
           </li>
-          <li class="features-item">
+          <li class="features-item features-item--lilac">
             <h2 class="features-title">Техника</h2>
             <a href="#" class="button features-link">для стройки</a>
           </li>
         </ul>
         <article class="features-slider features-col-left">
-          <input type="radio" class="features-slider-btn-1" id="features-slider-btn-1" name="features-toggle" checked>
-          <input type="radio" class="features-slider-btn-2" id="features-slider-btn-2" name="features-toggle">
-          <div class="features-slider-arrows">
-            <a class="features-slider-arrow icon-left" data-direction="left" href="#"></a>
-            <a class="features-slider-arrow icon-right" data-direction="right" href="#"></a>
+          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+          <div class="slider-controls">
+            <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+            <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
           </div>
-          <div class="features-slider-controls">
-            <label class="features-slider-control control-1" for="features-slider-btn-1"></label>
-            <label class="features-slider-control control-2" for="features-slider-btn-2"></label>
-          </div>
-          <div class="features-slider-inner">
-            <div class="features-slide">
+          <ul class="slider-list">
+            <li class="slider-item">
               <h2 class="features-slide-title">Перфораторы</h2>
               <p class="features-slide-text">Настоящие мужские игрушки</p>
               <a href="catalog.html" class="features-slide-link button">Открыть каталог</a>
-            </div>
-            <div class="features-slide">
+            </li>
+            <li class="slider-item">
               <h2 class="features-slide-title">Дрели</h2>
               <p class="features-slide-text">Соседям на радость!</p>
               <a href="catalog.html" class="features-slide-link button">Открыть каталог</a>
-            </div>
-          </div>  
+            </li>
+            </ul>
         </article>
         <div class="features-col-right">
           <ul class="features-list">
-            <li class="features-item">
+            <li class="features-item features-item--green">
               <h2 class="features-title">Скидки 50%</h2>
               <a href="#" class="button features-link">на 350 товаров</a>
             </li>
-            <li class="features-item">
+            <li class="features-item features-item--yellow">
               <h2 class="features-title">Доставка</h2>
               <a href="#" class="button features-link">бесплатно</a>
             </li>
@@ -110,13 +109,15 @@
         </div>
       </section>
       <section class="popular-product">
-        <h2 class="popular-product-title">Популярные товары:</h2>
-        <a href="#" class="popular-product-link button">все популярные товары</a>
+        <div class="title">
+          <h2 class="popular-product-title page-title">Популярные товары:</h2>
+          <a href="#" class="popular-product-link button">все популярные товары</a>
+      </div>
         <ul class="product-list">
           <li class="product-item">
             <div class="product-basket-actions">
-              <a href="#" class="">Купить</a>
-              <a href="#" class="product-action-link button">В закладки</a>
+              <a href="#" class="product-actions-buy button">Купить</a>
+              <a href="#" class="product-actions-bookmark button">В закладки</a>
             </div>
             <div class="product-basket-image">
               <img src="./img/png/BoschBFG9000.png" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
@@ -125,10 +126,10 @@
             <p class="product-basket-discount">32500 р.</p>
             <p class="product-basket-price">25500 р.</p>
           </li>
-          <li class="popular-item">
+          <li class="product-item">
             <div class="product-basket-actions">
-              <a href="#" class="">Купить</a>
-              <a href="#" class="product-action-link button">В закладки</a>
+              <a href="#" class="product-actions-buy button">Купить</a>
+              <a href="#" class="product-actions-bookmark button">В закладки</a>
             </div>
             <div class="product-basket-image">
               <img src="./img/png/BoschBFG3000.png" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
@@ -137,10 +138,10 @@
             <p class="product-basket-discount">22500 р.</p>
             <p class="product-basket-price">15500 р.</p>
           </li>
-          <li class="popular-item">
+          <li class="product-item">
             <div class="product-basket-actions">
-              <a href="#" class="">Купить</a>
-              <a href="#" class="product-action-link button">В закладки</a>
+              <a href="#" class="product-actions-buy button">Купить</a>
+              <a href="#" class="product-actions-bookmark button">В закладки</a>
             </div>
             <div class="product-basket-image">
               <img src="./img/png/BoschBFG6000.png" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
@@ -149,10 +150,10 @@
             <p class="product-basket-discount">30500 р.</p>
             <p class="product-basket-price">25500 р.</p>
           </li>
-          <li class="popular-item">
+          <li class="product-item">
             <div class="product-basket-actions">
-              <a href="#" class="">Купить</a>
-              <a href="#" class="product-action-link button">В закладки</a>
+              <a href="#" class="product-actions-buy button">Купить</a>
+              <a href="#" class="product-actions-bookmark button">В закладки</a>
             </div>
             <div class="product-basket-image">
               <img src="./img/png/BoschBFG2000.png" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
@@ -163,8 +164,10 @@
         </ul>
       </section>
       <section class="popular-brands">
-        <h2 class="popular-brands-title">Популярные производители:</h2>
-        <a href="#" class="popular-brands-link button">открыть каталог</a>
+        <div class="title">
+          <h2 class="popular-product-title page-title">Популярные производители:</h2>
+          <a href="#" class="popular-product-link button">все производители</a>
+        </div>
         <ul class="brands-list">
           <li class="brands-item">
             <a href="#" class="brands-link">
@@ -178,7 +181,7 @@
           </li>
           <li class="brands-item">
             <a href="#" class="brands-link">
-              <img src="./img/DeWALT.png" alt="DeWALT" width="146" height="44">
+              <img src="./img/png/DeWALT.png" alt="DeWALT" width="146" height="44">
             </a>
           </li>
           <li class="brands-item">
@@ -209,8 +212,8 @@
         </ul>
       </section> 
       <section class="service">
-        <h2 class="service-title">Сервисы</h2>
-        <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами!
+        <h2 class="service-title page-title">Сервисы</h2>
+        <p class="page-text">Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="service-slider">
           <input type="radio" class="service-slider-1" id="service-slider-1" name="service-toggle" checked>
@@ -224,8 +227,8 @@
         </div>
         <div class="service-slides">
           <div class="service-slide">
-            <h2 class="service-slide-title">Доставка</h2>
-            <p class="service-slide-text">
+            <h2 class="popular-product-title page-title">Доставка</h2>
+            <p class="page-text">
                 Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно!
                 Ведь мы неплохо заработаем,
@@ -233,8 +236,8 @@
             </p>
           </div>
           <div class="service-slide">
-            <h2 class="service-slide-title">Гарантия</h2>
-            <p class="service-slide-text">
+            <h2 class="popular-product-title page-title">Гарантия</h2>
+            <p class="page-text">
                 Если купленный у нас товар поломается или заискрит,
                 а также в случае пожара, спровоцированного его возгаранием,
                 вы всегда можете быть уверены в нашей гарантии. Мы обменяем
@@ -243,8 +246,8 @@
             </p>
           </div> 
           <div class="service-slide">
-            <h2 class="service-slide-title">Кредит</h2>
-            <p class="service-slide-text">
+            <h2 class="popular-product-title page-title">Кредит</h2>
+            <p class="page-text">
                 Залезть в долговую яму стало проще!
                 Кредитные консультанты придут вам на помощь.
             </p>
@@ -254,10 +257,10 @@
       </section>
       <section class="company-info">
         <div class="company-col-left">
-          <h2 class="company-title">Компания "Техномарт"</h2>
-          <p class="company-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+          <h2 class="company-title page-title">Компания "Техномарт"</h2>
+          <p class="company-text page-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>  
-          <p class="company-text">
+          <p class="company-text page-text">
             Мы можем доставить ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями:
           </p>
@@ -269,8 +272,8 @@
           <a href="#" class="company-link button">Подробнее о компании</a>
         </div>
         <div class="contacts-col-right">
-          <h2 class="contacts-title">Контакты</h2>
-          <p class="contacts-text">Вы можете забрать товар сами, <br> заехав в наш офис:</p>
+          <h2 class="contacts-title page-title">Контакты</h2>
+          <p class="contacts-text page-text">Вы можете забрать товар сами, <br> заехав в наш офис:</p>
           <div class="contacts-map">
             <a class="open-modal-map" href="#"><img src="img/png/map.png" alt="«Техномарт» на карте"></a>
           </div>
@@ -281,7 +284,9 @@
     <footer class="main-footer">
       <div class="main-footer-content">
         <div class="main-footer-col-left">
-          <a class="footer-logo">Техномарт</a>
+          <a class="footer-logo button">
+            <img src="./img/svg/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
+          </a>
           <p class="footer-contacts">
               г.&#160;Санкт-Петербург, ул.&#160;Б.&#160;Конюшенная, д.&#160;19/8
               +7&#160;(812)&#160;555-05-55
@@ -329,9 +334,15 @@
             Все&#160;права&#160;защищены
         </div>
         <div class="main-footer-social">
-          <a class="social icon-vk" href="http://vk.com/htmlacademy">Вконтакте</a>
-          <a class="social icon-facebook" href="http://www.facebook.com/htmlacademy">Facebook</a>
-          <a class="social icon-instagramm" href="http://instagramm.com/htmlacademy_ru">Twitter</a>
+          <a class="social icon-vk" href="http://vk.com/htmlacademy" aria-label="Vk">
+            <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.163 1.484c11.49 0 20.805 9.103 20.805 20.333 0 11.23-9.315 20.332-20.805 20.332S1.357 33.046 1.357 21.817c0-11.23 9.315-20.333 20.806-20.333z" fill="#212A3A"/><path d="M24.54 25.728c.92-.29 2.1 1.913 3.354 2.755.942.639 1.663.501 1.663.501l3.345-.047s1.748-.105.921-1.457c-.068-.112-.484-1.002-2.489-2.833-2.096-1.915-1.812-1.605.712-4.916 1.538-2.019 2.153-3.251 1.96-3.776-.185-.506-1.314-.374-1.314-.374l-3.768.025c-.367 0-.678.111-.82.483-.003.004-.598 1.562-1.391 2.886-1.677 2.802-2.346 2.952-2.623 2.776-.637-.406-.476-1.628-.476-2.497 0-2.716.416-3.849-.815-4.141-.41-.098-.711-.161-1.76-.17-1.34-.02-2.479 0-3.124.308-.428.209-.757.667-.557.693.25.033.811.15 1.112.55.386.517.374 1.677.374 1.677s.22 3.198-.52 3.594c-.508.272-1.203-.283-2.699-2.827a23.511 23.511 0 01-1.34-2.74s-.112-.267-.314-.413c-.24-.173-.578-.229-.578-.229l-3.576.023s-.538.015-.735.245c-.175.205-.015.627-.015.627s2.802 6.45 5.974 9.7c2.908 2.983 6.213 2.785 6.213 2.785h1.497s.452-.05.683-.292c.216-.225.206-.648.206-.648s-.03-1.977.9-2.268z" fill="#fff"/></svg>
+          </a>
+          <a class="social icon-facebook" href="http://www.facebook.com/htmlacademy" aria-label="Facebook">
+            <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.894 1.484c11.23 0 20.333 9.103 20.333 20.333 0 11.23-9.104 20.332-20.333 20.332-11.23 0-20.333-9.103-20.333-20.332 0-11.23 9.103-20.333 20.333-20.333z" fill="#212A3A"/><path d="M28 15v-4h-4a4 4 0 00-4 4v4h-4v4h4v10h4V23h4v-4h-4v-4h4z" fill="#fff"/></svg>
+          </a>
+          <a class="social icon-instagramm" href="http://instagramm.com/htmlacademy_ru" aria-label="instagramm">
+            <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.894 1.484c11.23 0 20.333 9.103 20.333 20.333 0 11.23-9.104 20.332-20.333 20.332-11.23 0-20.333-9.103-20.333-20.332 0-11.23 9.103-20.333 20.333-20.333z" fill="#212A3A"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14 11h15c1.65 0 3 1.35 3 3v15c0 1.65-1.35 3-3 3H14c-1.65 0-3-1.35-3-3V14c0-1.65 1.35-3 3-3zm11 10.5c0-1.93-1.57-3.5-3.5-3.5S18 19.57 18 21.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5zM14 29v-9h1.181c-.118.491-.18.995-.181 1.5a6.5 6.5 0 1013 0 6.451 6.451 0 00-.181-1.5H29v9H14zm11-11h4v-4h-4v4z" fill="#fff"/></svg>
+          </a>
         </div>
         <div class="feedback">
           Обратная связь:
