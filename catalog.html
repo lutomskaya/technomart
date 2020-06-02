@@ -9,6 +9,7 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="container">
       <div class="main-header-bar">
         <a href="index.html" class="main-header-logo button">
           <img src="./img/svg/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
@@ -66,21 +67,25 @@
           </li>
         </ul>
       </nav>
+    </div>
     </header>
     <main>
       <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
-      <div class="breadcrumbs">
-        <a class="breadcrumbs-item" href="index.html">Главная</a>
-        <a class="breadcrumbs-item" href="blank.html">Каталог</a>
-        <a class="breadcrumbs-item" href="blank.html">Инструмент</a>
-        <span class="breadcrumbs-item">Перфораторы</span>
+      <div class="breadcrumbs container">
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-item" href="blank.html">Каталог</a></li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-item" href="blank.html">Инструмент</a></li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-item">Перфораторы</a></li>
       </div>
-      <article class="catalog">
-        <h2 class="catalog-title">Перфораторы</h2>
+      <article class="catalog container">
+        <h2 class="catalog-title page-title">Перфораторы</h2>
+        <div class="catalog-inner">
+        <div class="catalog-col-left">
         <section class="catalog-filters">
           <form action="https://echo.htmlacademy.ru" method="get">
             <header class="filter-header">
-              <h2 class="filter-header-title">Фильтр:</h2>
+              <h2 class="filter-title filter-header-title">Фильтр:</h2>
             </header>
             <fieldset class="filter filter-price">
               <legend class="filter-title">Цена:</legend>
@@ -123,6 +128,8 @@
             <button class="catalog-button button" type="submit">Показать</button>
           </form>
         </section>
+      </div> 
+      <div class="catalog-col-right"> 
         <section class="sort">
           <h2 class="sort-title">Сортировка:</h2>
           <div class="sort-list">
@@ -136,7 +143,7 @@
           </div>  
         </section>
         <section class="catalog-product">
-          <ul class="product-list">
+          <ul class="product-list product-list-catalog">
             <li class="product-item">
               <div class="product-basket-actions">
                 <a href="#" class="product-actions-buy button">Купить</a>
@@ -253,20 +260,26 @@
           <a class="paginator-link" href="#">3</a>
           <a class="paginator-link catalog-button" href="#">Следующая</a>
         </div>
+      </div>
+    </div>
       </article>
       <section class="catalog-promo">
+        <div class="container">
         <h2 class="catalog-promo-title page-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
         <p class="catalog-promo-text page-text">
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
           В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </p>
+      </div>
       </section>  
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="main-footer-content">
         <div class="main-footer-col-left">
-          <a class="footer-logo" href="index.html">Техномарт</a>
+          <a class="footer-logo button">
+            <img src="./img/svg/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
+          </a>
           <p class="footer-contacts">
               г.&#160;Санкт-Петербург, ул.&#160;Б.&#160;Конюшенная, д.&#160;19/8
               +7&#160;(812)&#160;555-05-55
@@ -282,7 +295,7 @@
                 <a class="footer-nav-link" href="blank.html">Новости</a>
               </li>
               <li class="footer-nav-item">
-                <a class="footer-nav-link">Каталог</a>
+                <a class="footer-nav-link" href="catalog.html">Каталог</a>
               </li>
               <li class="footer-nav-item">
                 <a class="footer-nav-link" href="blank.html">Доставка</a>
