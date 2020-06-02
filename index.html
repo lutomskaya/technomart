@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
@@ -7,17 +7,22 @@
     <link href="./css/normalize.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
+      <div class="container">
       <div class="main-header-bar">
         <a class="main-header-logo button">
           <img src="./img/svg/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
         </a>
         <form class="search" action="/echo" method="get">
-          <input class="search-field" id="search-field" type="search" name="search" placeholder="Поиск">
-          <button class="button search-submit" id="search-submit" type="submit"></button>
+          <label class="visually-hidden" for="search">Поиск</label>
+          <input class="search" type="text" name="search" id="search" placeholder="Поиск:">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+            <path fill="#ffffff"
+            d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+           </svg>
       </form>
-      <a href="#" class="bookmarks-bar">Закладки<span>0</span></a>
+      <a href="#" class="bookmarks-bar">Закладки: <span>0</span></a>
       <a href="#" class="basket-bar">Корзина: <span class="count">0</span></a>
       <a href="#" class="button order-bar">Оформить заказ</a>
       </div>
@@ -57,24 +62,26 @@
           </li>
         </ul>
       </nav>
+    </div>
     </header>
     <main class="main-content">
       <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
-      <section class="features">
+      <section class="features container">
         <ul class="features-list">
-          <li class="features-item features-item--yellow">
+          <li class="features-items features-item--yellow">
             <h2 class="features-title">Материалы</h2>
             <a href="#" class="button features-link">на любой вкус</a>
           </li>
-          <li class="features-item features-item--blue">
+          <li class="features-items features-item--blue">
             <h2 class="features-title">Инструмент</h2>
             <a href="#" class="button features-link">на все случаи</a>
           </li>
-          <li class="features-item features-item--lilac">
+          <li class="features-items features-item--lilac">
             <h2 class="features-title">Техника</h2>
             <a href="#" class="button features-link">для стройки</a>
           </li>
         </ul>
+        <div class="features-col">
         <article class="features-slider features-col-left">
           <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
           <input class="visually-hidden" type="radio" id="product-2" name="toggle">
@@ -97,18 +104,19 @@
         </article>
         <div class="features-col-right">
           <ul class="features-list">
-            <li class="features-item features-item--green">
+            <li class="features-items features-item--green">
               <h2 class="features-title">Скидки 50%</h2>
               <a href="#" class="button features-link">на 350 товаров</a>
             </li>
-            <li class="features-item features-item--yellow">
+            <li class="features-items features-item--yellow">
               <h2 class="features-title">Доставка</h2>
               <a href="#" class="button features-link">бесплатно</a>
             </li>
           </ul>  
         </div>
+        </div>
       </section>
-      <section class="popular-product">
+      <section class="popular-product container">
         <div class="title">
           <h2 class="popular-product-title page-title">Популярные товары:</h2>
           <a href="#" class="popular-product-link button">все популярные товары</a>
@@ -163,7 +171,7 @@
           </li>
         </ul>
       </section>
-      <section class="popular-brands">
+      <section class="popular-brands container">
         <div class="title">
           <h2 class="popular-product-title page-title">Популярные производители:</h2>
           <a href="#" class="popular-product-link button">все производители</a>
@@ -211,11 +219,12 @@
           </li>
         </ul>
       </section> 
-      <section class="service">
+      <section class="service container">
         <h2 class="service-title page-title">Сервисы</h2>
         <p class="page-text">Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <div class="service-slider">
+        <div class="service-slider-inner">
+          <div class="service-slider">
           <input type="radio" class="service-slider-1" id="service-slider-1" name="service-toggle" checked>
           <input type="radio" class="service-slider-2" id="service-slider-2" name="service-toggle">
           <input type="radio" class="service-slider-3" id="service-slider-3" name="service-toggle">
@@ -225,8 +234,8 @@
             <label class="service-slider-control control-3" for="service-slider-3">Кредит</label>
           </div>
         </div>
-        <div class="service-slides">
-          <div class="service-slide">
+        <ul class="service-slides-list">
+          <li class="service-slides-item">
             <h2 class="popular-product-title page-title">Доставка</h2>
             <p class="page-text">
                 Мы с удовольствием доставим ваш товар прямо
@@ -234,8 +243,8 @@
                 Ведь мы неплохо заработаем,
                 поднимая его на ваш этаж!
             </p>
-          </div>
-          <div class="service-slide">
+          </li>
+          <li class="service-slides-item">
             <h2 class="popular-product-title page-title">Гарантия</h2>
             <p class="page-text">
                 Если купленный у нас товар поломается или заискрит,
@@ -244,18 +253,19 @@
                 сгоревший товар на новый.
                 Дом уж восстановите как-нибудь сами.
             </p>
-          </div> 
-          <div class="service-slide">
+          </li> 
+          <li class="service-slides-item">
             <h2 class="popular-product-title page-title">Кредит</h2>
             <p class="page-text">
                 Залезть в долговую яму стало проще!
                 Кредитные консультанты придут вам на помощь.
             </p>
             <a href="#" class="service-slide-link button">Отправить заявку</a>
-          </div> 
-        </div>  
+          </li> 
+        </ul>
+      </div>    
       </section>
-      <section class="company-info">
+      <section class="company-info container">
         <div class="company-col-left">
           <h2 class="company-title page-title">Компания "Техномарт"</h2>
           <p class="company-text page-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
@@ -281,7 +291,7 @@
         </div>
       </section> 
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="main-footer-content">
         <div class="main-footer-col-left">
           <a class="footer-logo button">
@@ -354,17 +364,32 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
-      <button type="button" class="modal-close">Закрыть</a>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="login-field">Ваше имя:</label>
-        <input type="text" name="login" id="login-field" placeholder="Имя Фамилия">
-        <label for="email-field">Ваш e-mail:</label>
-        <input type="email" name="email" id="email-field" placeholder="email@example.com">
-        <label for="text-field">Текст письма:</label>
-        <textarea name="text" id="text-field" cols="30" rows="10">В свободной форме</textarea>
-        <button class="button button-form" type="submit">Оформить заказ</button>
+    <div class="modal modal-contact">
+      <a type="button" class="modal-close modal-contact-close">Закрыть</a>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-content">
+          <div class="modal-form-half-row">
+            <div class="modal-form-column">
+        <label class="contact-form-label" for="login-field">Ваше имя:</label>
+        <input class="contact-form-item" type="text" name="login" id="login-field" placeholder="Имя Фамилия" required>
+      </div>
+      <div class="modal-form-column">
+        <label class="contact-form-label" for="email-field">Ваш e-mail:</label>
+        <input class="contact-form-item" type="email" name="email" id="email-field" placeholder="email@example.com" required>
+      </div>  
+      </div>
+      <div class="modal-form-row">
+      <div class="modal-form-column">
+        <label class="contact-form-label" for="text-field">Текст письма:</label>
+        <textarea class="contact-form-item text-field" name="text" id="text-field" cols="44" rows="5" placeholder="В свободной форме" required></textarea>
+        </div>
+      </div>
+    </div>
+        <div class="modal-footer">
+        <button class="button-form button" type="submit">Оформить заказ</button>
+        </div>
       </form>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
