@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap">
     <link href="./css/normalize.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
-    <header class="main-header">
+    <header class="main-header header-catalog">
       <div class="main-header-bar">
         <div class="container">
         <a href="index.html" class="main-header-logo button">
@@ -29,12 +29,12 @@
         </div>  
       </div>
     </div>  
-      <div class="main-header-content container">
-        <i class="main-header-text">Интернет-магазин строительных материалов и инструментов для ремонта</i>
-        <div class="main-header-contacts">
-          <a href="tel:+78125550555" class="contact-tel">+7 (812) 555 05 55</a>
-          <p class="contact-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        </div>
+    <div class="main-header-content container">
+      <p class="main-header-text">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
+      <div class="main-header-contacts">
+        <a href="tel:+78125550555" class="contact-tel">+7 (812) 555-05-55</a>
+        <p class="contact-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      </div>
         <div class="user-catalog">  
           <a class="user-catalog__link user-icon" href="profile.html" aria-label="Профиль пользователя">
             <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,6 +88,7 @@
           <li class="breadcrumbs-item breadcrumbs-arrow"><a class="breadcrumbs-item" href="blank.html">Каталог</a></li>
           <li class="breadcrumbs-item breadcrumbs-arrow"><a class="breadcrumbs-item" href="blank.html">Инструмент</a></li>
           <li class="breadcrumbs-item breadcrumbs-arrow"><a class="breadcrumbs-item">Перфораторы</a></li>
+        </ul>  
       </div>
       <article class="catalog container">
         <h2 class="catalog-title">Перфораторы</h2>
@@ -178,7 +179,7 @@
           </div>
         <section class="catalog-product">
           <ul class="product-list product-list-catalog">
-            <li class="product-item">
+            <li class="product-item product-item-catalog">
               <div class="product-basket-actions">
                 <a href="#" class="product-actions-buy button">Купить</a>
                 <a href="#" class="product-actions-bookmark button">В закладки</a>
@@ -190,7 +191,7 @@
               <div class="product-basket-discount">30500 р.</div>
               <div class="product-basket-price">25500 р.</div>
             </li>
-            <li class="product-item">
+            <li class="product-item product-item-catalog">
               <div class="product-basket-actions">
                 <a href="#" class="product-actions-buy button">Купить</a>
                 <a href="#" class="product-actions-bookmark button">В закладки</a>
@@ -202,7 +203,8 @@
               <div class="product-basket-discount">30500 р.</div>
               <div class="product-basket-price">25500 р.</div>
             </li>
-            <li class="product-item">
+            <li class="product-item product-item-catalog">
+              <div class="flag flag-new">новинка</div>
               <div class="product-basket-actions">
                 <a href="#" class="product-actions-buy button">Купить</a>
                 <a href="#" class="product-actions-bookmark button">В закладки</a>
@@ -214,7 +216,8 @@
               <div class="product-basket-discount">30500 р.</div>
               <div class="product-basket-price">25500 р.</div>
             </li>
-            <li class="product-item">
+            <li class="product-item product-item-catalog">
+              <div class="flag flag-new">новинка</div>
               <div class="product-basket-actions">
                 <a href="#" class="product-actions-buy button">Купить</a>
                 <a href="#" class="product-actions-bookmark button">В закладки</a>
@@ -226,7 +229,7 @@
               <div class="product-basket-discount">22500 р.</div>
               <div class="product-basket-price">15500 р.</div>
             </li>
-            <li class="product-item">
+            <li class="product-item product-item-catalog">
               <div class="product-basket-actions">
                 <a href="#" class="product-actions-buy button">Купить</a>
                 <a href="#" class="product-actions-bookmark button">В закладки</a>
@@ -238,7 +241,8 @@
               <div class="product-basket-discount">30500 р.</div>
               <div class="product-basket-price">25500 р.</div>
             </li>
-            <li class="product-item">
+            <li class="product-item product-item-catalog">
+              <div class="flag flag-new">новинка</div>
               <div class="product-basket-actions">
                 <a href="#" class="product-actions-buy button">Купить</a>
                 <a href="#" class="product-actions-bookmark button">В закладки</a>
@@ -250,7 +254,8 @@
               <div class="product-basket-discount"></div>
               <div class="product-basket-price">12500 р.</div>
             </li>
-            <li class="product-item">
+            <li class="product-item product-item-catalog">
+              <div class="flag flag-new">новинка</div>
               <div class="product-basket-actions">
                 <a href="#" class="product-actions-buy button">Купить</a>
                 <a href="#" class="product-actions-bookmark button">В закладки</a>
@@ -262,7 +267,7 @@
               <div class="product-basket-discount">22500 р.</div>
               <div class="product-basket-price">15500 р.</div>
             </li>
-            <li class="product-item">
+            <li class="product-item product-item-catalog">
               <div class="product-basket-actions">
                 <a href="#" class="product-actions-buy button">Купить</a>
                 <a href="#" class="product-actions-bookmark button">В закладки</a>
@@ -274,7 +279,8 @@
               <div class="product-basket-discount">30500 р.</div>
               <div class="product-basket-price">25500 р.</div>
             </li>
-            <li class="product-item">
+            <li class="product-item product-item-catalog">
+              <div class="flag flag-new">новинка</div>
               <div class="product-basket-actions">
                 <a href="#" class="product-actions-buy button">Купить</a>
                 <a href="#" class="product-actions-bookmark button">В закладки</a>
@@ -304,7 +310,11 @@
         <h2 class="catalog-promo-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
         <p class="catalog-promo-text">
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+        </p>
+        <p class="catalog-promo-text">
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+        </p>
+        <p class="catalog-promo-text">
           В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </p>
       </div>
@@ -313,8 +323,8 @@
     <footer class="main-footer">
       <section class="nav container">
         <div class="main-footer-content">
-          <a href="index.html" class="footer-logo">
-            <img src="./img/svg/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
+          <a class="footer-logo">
+            <img src="./img/svg/logo-technomart-footer.svg" alt="Логотип Техномарт" width="138" height="23">
           </a>
           <p class="footer-contacts">
               г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -363,9 +373,9 @@
           </p>
           <div class="socials">
             <ul class="socials-list">
-              <li class="socials-link"><a href="#"><img src="./img/svg/Вконтакте.svg" width="44" height="44" alt="Наш Вконтакте"></a></li>
-              <li class="socials-link"><a href="#"><img src="./img/svg/Фейсбук.svg" width="44" height="44" alt="Наш Фэйсбук"></a></li>
-              <li class="socials-link"><a href="#"><img src="./img/svg/Инстаграм.svg" width="44" height="44" alt="Наш Инстаграм"></a></li>
+              <li class="socials-link"><a href="#"><img src="./img/svg/icon-vk.svg" width="26" height="15" alt="Наш Вконтакте"></a></li>
+              <li class="socials-link"><a href="#"><img src="./img/svg/icon-fb.svg" width="12" height="22" alt="Наш Фэйсбук"></a></li>
+              <li class="socials-link"><a href="#"><img src="./img/svg/icon-insta.svg" width="21" height="21" alt="Наш Инстаграм"></a></li>
             </ul>
           </div> 
           <div class="feedback">
@@ -379,5 +389,14 @@
         </div>
       </section>
     </footer>
+    <section class="modal-cart modal-cart-content">
+      <a type="button" class="modal-close modal-cart-close">Закрыть</a>
+      <p>Товар добавлен в корзину!</p>
+      <div class="modal-footer modal-footer-cart">
+        <a class="modal-cart__checkout button" href="blank.html">Оформить заказ</a>
+        <a class="modal-cart__continue" href="blank.html">Продолжить покупки</a>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>

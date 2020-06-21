@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap">
     <link href="./css/normalize.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
   </head>
@@ -30,9 +30,9 @@
         </div>
       </div>  
       <div class="main-header-content container">
-        <i class="main-header-text">Интернет-магазин строительных материалов и инструментов для ремонта</i>
+        <p class="main-header-text">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
         <div class="main-header-contacts">
-          <a href="tel:+78125550555" class="contact-tel">+7 (812) 555 05 55</a>
+          <a href="tel:+78125550555" class="contact-tel">+7 (812) 555-05-55</a>
           <p class="contact-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="main-header-user">
@@ -87,13 +87,13 @@
           </li>
           <li class="features-items features-slider">
             <ul class="slider-list">
-              <li class="slider-item slider-current">
+              <li class="slider-item slider-current first-slide">
                 <img class="features-slide-image" src="./img/slider-1.jpg" width="620" height="266" alt="Перфоратор"> 
                 <h2 class="features-slide-title">Перфораторы</h2>
                 <p class="features-slide-text">Настоящие мужские игрушки</p>
                 <a href="catalog.html" class="features-slide-link">Открыть каталог</a>
               </li>
-              <li class="slider-item slide">
+              <li class="slider-item second-slide">
                 <img class="features-slide-image" src="./img/slider-2.jpg" width="620" height="266" alt="Дрель">
                 <h2 class="features-slide-title">Дрели</h2>
                 <p class="features-slide-text">Соседям на радость!</p>
@@ -101,11 +101,11 @@
               </li>
             </ul>
             <div class="slider-controls">
-              <button type="button" aria-label="Слайдер назад"></button>
-						<button class="checked-button" type="button" aria-label="Слайдер вперед"></button>
+              <button class="slide-button" type="button" aria-label="Слайдер назад"></button>
+						  <button class="slide-button button-current" type="button" aria-label="Слайдер вперед"></button>
             </div>
-            <div class="slider-prv" aria-label="Предыдущий слайд"></div>
-            <div class="slider-next" aria-label="Следующий слайд"></div>
+            <div class="slide-prv" aria-label="Предыдущий слайд"></div>
+            <div class="slide-next" aria-label="Следующий слайд"></div>
 						
           </li>    
           <li class="features-items features-item--green">
@@ -118,7 +118,7 @@
           </li>
         </ul>  
       </section>
-      <section class="catalog-product container">
+      <section class="product catalog-product container">
         <div class="title">
           <h2 class="popular-product-title">Популярные товары:</h2>
           <a href="#" class="popular-product-link">все популярные товары</a>
@@ -241,7 +241,7 @@
                 <p class="service-slide-text">
                   Мы с удовольствием доставим ваш товар прямо
                   к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем,
+                  Ведь мы неплохо заработаем, <br>
                   поднимая его на ваш этаж!
                 </p>
               </div>
@@ -251,7 +251,7 @@
                     Если купленный у нас товар поломается или заискрит,
                     а также в случае пожара, спровоцированного его возгаранием,
                     вы всегда можете быть уверены в нашей гарантии. Мы обменяем
-                    сгоревший товар на новый.
+                    сгоревший товар на новый.<br>
                     Дом уж восстановите как-нибудь сами.
                 </p>
               </div> 
@@ -269,10 +269,10 @@
       </section>
       <section class="company-info container">
         <div class="company-transport">
-          <h2 class="company-title">Компания "Техномарт"</h2>
+          <h2 class="company-title">Компания &laquo;Техномарт&raquo;</h2>
           <p class="company-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>  
-          <p class="company-text">
+          <p class="company-text company-text--next">
             Мы можем доставить ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями:
           </p>
@@ -285,7 +285,7 @@
         </div>
         <div class="company-contacts">
           <h2 class="company-title">Контакты</h2>
-          <p class="company-text">Вы можете забрать товар сами, <br> заехав в наш офис:</p>
+          <p class="contacts-text">Вы можете забрать товар сами, <br> заехав в наш офис:</p>
           <div class="contacts-map">
             <a class="open-modal-map" href="#"><img src="img/png/map.png" alt="«Техномарт» на карте"></a>
           </div>
@@ -297,7 +297,7 @@
       <section class="nav container">
         <div class="main-footer-content">
           <a class="footer-logo">
-            <img src="./img/svg/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
+            <img src="./img/svg/logo-technomart-footer.svg" alt="Логотип Техномарт" width="138" height="23">
           </a>
           <p class="footer-contacts">
               г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -346,9 +346,9 @@
           </p>
           <div class="socials">
             <ul class="socials-list">
-              <li class="socials-link"><a href="#"><img src="./img/svg/Вконтакте.svg" width="44" height="44" alt="Наш Вконтакте"></a></li>
-              <li class="socials-link"><a href="#"><img src="./img/svg/Фейсбук.svg" width="44" height="44" alt="Наш Фэйсбук"></a></li>
-              <li class="socials-link"><a href="#"><img src="./img/svg/Инстаграм.svg" width="44" height="44" alt="Наш Инстаграм"></a></li>
+              <li class="socials-link"><a href="#"><img src="./img/svg/icon-vk.svg" width="26" height="15" alt="Наш Вконтакте"></a></li>
+              <li class="socials-link"><a href="#"><img src="./img/svg/icon-fb.svg" width="12" height="22" alt="Наш Фэйсбук"></a></li>
+              <li class="socials-link"><a href="#"><img src="./img/svg/icon-insta.svg" width="21" height="21" alt="Наш Инстаграм"></a></li>
             </ul>
           </div> 
           <div class="feedback">
@@ -386,6 +386,7 @@
     </section>
     <section class="map-popup">
       <div class="map-popup-content">
+        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002762!2d30.320858715640316!3d59.93871916905475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1591703635800!5m2!1sru!2sru" width="943" height="449" allowfullscreen="" title="схема расположеия"></iframe>
         <img src="./img/png/map-big.png" width="943" height="449" alt="Большая схема с месторасположением компании Техномарт">
         <a type="button" class="modal-close map-popup-close">Закрыть</a>
       </div>
