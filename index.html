@@ -15,7 +15,7 @@
             <img src="./img/svg/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
           </a>
           <div class="user-nav">
-            <form class="search" action="/echo" method="get">
+            <form class="search" action="https://echo.htmlacademy.ru" method="get">
               <label>
                 <input class="user-nav-search" type="search" name="user_nav" placeholder="Поиск:" aria-label="Поле поиска">
                 <svg class="user-nav-search-image" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,9 +23,11 @@
                 </svg>
               </label> 
             </form>
-            <a href="#" class="bookmarks-bar">Закладки: <span>0</span></a>
-            <a href="#" class="basket-bar">Корзина: <span class="count">0</span></a>
-            <a href="#" class="order-bar">Оформить заказ</a>
+            <div class="user-nav-inner">
+              <a href="#" class="bookmarks-bar">Закладки: <span>0</span></a>
+              <a href="#" class="basket-bar">Корзина: <span class="count">0</span></a>
+              <a href="#" class="order-bar">Оформить заказ</a>
+            </div>
           </div>  
         </div>
       </div>  
@@ -118,13 +120,13 @@
           </li>
         </ul>  
       </section>
-      <section class="product catalog-product container">
+      <section class="product container">
         <div class="title">
           <h2 class="popular-product-title">Популярные товары:</h2>
           <a href="#" class="popular-product-link">все популярные товары</a>
         </div>
         <ul class="product-list">
-          <li class="product-item">
+          <li class="product-item product-item--first">
             <div class="product-basket-actions">
               <a href="#" class="product-actions-buy button">Купить</a>
               <a href="#" class="product-actions-bookmark button">В закладки</a>
@@ -262,10 +264,10 @@
                     Кредитные консультанты придут вам на помощь.
                 </p>
                 <a href="#" class="service-slide-link button">Отправить заявку</a>
-              </li> 
-            </ul>
+              </div>
+            </div>
           </div>
-        </div>      
+        </div>          
       </section>
       <section class="company-info container">
         <div class="company-transport">
@@ -357,13 +359,13 @@
           </div>
           <div class="developer">
             Разработано —
-            <a href="http://htmlacademy.ru">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </div>
         </div>
       </section>
     </footer>
     <section class="modal modal-contact">
-      <a type="button" class="modal-close modal-contact-close">Закрыть</a>
+      <button type="button" class="modal-close modal-contact-close" aria-label="Закрыть"></button>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-content">
           <p class="modal-form-item">
@@ -388,7 +390,7 @@
       <div class="map-popup-content">
         <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002762!2d30.320858715640316!3d59.93871916905475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1591703635800!5m2!1sru!2sru" width="943" height="449" allowfullscreen="" title="схема расположеия"></iframe>
         <img src="./img/png/map-big.png" width="943" height="449" alt="Большая схема с месторасположением компании Техномарт">
-        <a type="button" class="modal-close map-popup-close">Закрыть</a>
+        <button type="button" class="modal-close map-popup-close" aria-label="Закрыть"></button>
       </div>
     </section>  
     <script src="js/script.js"></script>

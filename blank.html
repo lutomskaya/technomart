@@ -10,48 +10,60 @@
   <body>
     <header class="main-header">
       <div class="main-header-bar">
-        <a href="#" class="main-header-logo">Техномарт</a>
-        <form class="search" action="/echo" method="get">
-          <input class="search-field" id="search-field" type="search" name="search" placeholder="Поиск">
-          <button class="button search-submit" id="search-submit" type="submit"></button>
-      </form>
-      <a href="#" class="bookmarks-bar">Закладки<span>0</span></a>
-      <a href="#" class="basket-bar">Корзина: <span class="count">0</span></a>
-      <a href="#" class="button order-bar">Оформить заказ</a>
-      </div>
-      <div class="main-header-content">
-        <i class="main-header-text">Интернет-магазин строительных материалов и инструментов для ремонта</i>
+        <div class="container">
+          <a class="main-header-logo">
+            <img src="./img/svg/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
+          </a>
+          <div class="user-nav">
+            <form class="search" action="/echo" method="get">
+              <label>
+                <input class="user-nav-search" type="search" name="user_nav" placeholder="Поиск:" aria-label="Поле поиска">
+                <svg class="user-nav-search-image" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+                </svg>
+              </label> 
+            </form>
+            <a href="#" class="bookmarks-bar">Закладки: <span>0</span></a>
+            <a href="#" class="basket-bar">Корзина: <span class="count">0</span></a>
+            <a href="#" class="order-bar">Оформить заказ</a>
+          </div>  
+        </div>
+      </div>  
+      <div class="main-header-content container">
+        <p class="main-header-text">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
         <div class="main-header-contacts">
-          <p class="contact-tel">+7 (812) 555-05-55</p>
+          <a href="tel:+78125550555" class="contact-tel">+7 (812) 555-05-55</a>
           <p class="contact-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="main-header-user">
-          <a href="#" class="user-login">Войти</a>
-          <a href="#" class="user-registration">Регистрация</a>
-        </div>  
-      </div>
-      <nav class="main-nav">
+          <ul class="main-header-user-list">
+            <li class="main-header-user-item checkin"><a href="#">Войти</a></li>
+            <li class="main-header-user-item registration"><a href="#">Регистрация</a></li>
+          </ul>  
+        </div>
+      </div>  
+      <nav class="main-nav container">
         <ul class="main-nav-list">
           <li class="main-nav-item">
-            <a href="index.html" class="main-nav-link">Главная</a>
+            <a class="main-nav-link">Главная</a>
           </li>
           <li class="main-nav-item">
-            <a href="#" class="main-nav-link">Компания</a>
+            <a href="blank.html" class="main-nav-link">Компания</a>
           </li>
           <li class="main-nav-item">
             <a href="catalog.html" class="main-nav-link">Каталог</a>
           </li>
           <li class="main-nav-item">
-            <a href="#" class="main-nav-link">Новости</a>
+            <a href="blank.html" class="main-nav-link">Новости</a>
           </li>
           <li class="main-nav-item">
-            <a href="#" class="main-nav-link">Спецпредложения</a>
+            <a href="blank.html" class="main-nav-link">Спецпредложения</a>
           </li>
           <li class="main-nav-item">
-            <a href="#" class="main-nav-link">Доставка</a>
+            <a href="blank.html" class="main-nav-link">Доставка</a>
           </li>
           <li class="main-nav-item">
-            <a href="contacts.html" class="main-nav-link">Контакты</a>
+            <a href="blank.html" class="main-nav-link">Контакты</a>
           </li>
         </ul>
       </nav>
